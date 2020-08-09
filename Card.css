@@ -1,0 +1,65 @@
+body{
+   background-color: rgb(4, 32, 4);
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   color: white;
+}
+button {
+  background-color: yellowgreen;
+  }
+  
+	button:hover {background-color: #3e8e41}
+  
+  	button:active {
+	background-color: #7c2712;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+
+  .blink {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    color: #7c2712;
+    font-size: 24px;
+    font-weight: 800;
+    }
+    
+    @keyframes blink {
+    0% {opacity: 1;}
+    75% {opacity: 1;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+    }
+.box{
+  margin-left: 15%;
+
+}
+.cardBox1{
+  float: left;
+  width: 30%;
+  margin-right: 20%;
+}
+.cardBox2{
+  float: left;
+  width: 30%;
+}
+.clear{
+  clear: both;
+}
+.buttonPass{
+  background-color: #829b83;
+}
+.cardImage{
+  -webkit-animation: rotation 6s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
